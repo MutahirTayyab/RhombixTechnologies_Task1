@@ -10,7 +10,7 @@ body{
     color: white;
 }
 
-/* Header */
+/* Header Section */
 #header{
     height: 60px;
     display: flex;
@@ -27,7 +27,7 @@ body{
 }
 
 #header a{
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -35,7 +35,7 @@ body{
     font-size: 1rem;
 }
 
-/* Introduction */
+/* Introduction Section */
 #introduction{
     display:flex;
     text-align: justify;
@@ -89,7 +89,7 @@ body{
     padding: 4px 6px 4px 6px;
 }
 
-/* Education */
+/* Education Section */
 #education{
     text-align: center;
     margin-top: 80px;
@@ -159,5 +159,135 @@ body{
     font-size: 0.625rem;
 }
 .education-bio{
+    font-size: 0.875rem;
+}
+
+/* Projects Section */
+#projects{
+    text-align: center;
+    margin-top: 80px;
+}
+
+#projects-para{
+    font-size: 0.688rem;
+}
+
+#projects-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.projects-box{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+border: 2px dashed white;
+border-radius: 20px;
+height: 310px;
+width: 45%;
+background-color: black;
+color: white;
+padding: 0px 0px 15px;
+margin-top: 40px;
+/* margin-left: 100px; */
+backdrop-filter: blur(20px);
+box-shadow: 0 0 5px rgba(223, 235, 242, 1);
+}
+/* Skills Section */
+#skills{
+    text-align: center;
+    margin-top: 80px;
+}
+
+#skills-para{
+    font-size: 0.688rem;
+}
+
+#skills-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#skills-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: 2px dashed white;
+    border-radius: 20px;
+    height: 310px;
+    width: 45%;
+    background-color: black;
+    color: white;
+    padding: 0px 0px 15px;
+    margin-top: 40px;
+    /* margin-left: 100px; */
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 5px rgba(223, 235, 242, 1);
+}
+.skills-logo{
+    outline: none;
+    border: none;
+    height: 65px;
+    width: 45px;
+    background-repeat: no-repeat;
+    padding:30px 40px 30px 40px;
+    background-size: cover;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Experience Section */
+#experience{
+    text-align: center;
+    margin-top: 80px;
+}
+
+#experience-para{
+    font-size: 0.688rem;
+}
+
+#experience-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#experience-box{
+    border: 2px dotted white;
+    border-radius: 20px;
+    height: 200px;
+    width: 30%;
+    background-color: transparent;
+    color: white;
+    padding: 15px 15px 15px 15px;
+    margin-top: 40px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 5px rgba(223, 235, 242, 1);
+}
+
+#company-logo{
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    height: 76px;
+    width: 79px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    margin-bottom: 5px;
+    margin-left : auto; 
+    margin-right: auto;
+}
+
+.experience-para{
+    line-height: 30px;
+    /* text-align: left; */
+}
+
+.experience-paras{
+    color: #8C8C8C;
     font-size: 0.875rem;
 }
