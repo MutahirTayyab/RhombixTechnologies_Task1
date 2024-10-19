@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Arima", system-ui;
     border: border-box;
 }
 
@@ -10,59 +10,64 @@ body{
     color: white;
 }
 
+
 /* Header Section */
-#header{
+#header-section{
     height: 60px;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items:center;
     background-color: #44444C;
     font-weight: 700;
-    font-size: 0.938rem;
-    border-bottom: 1px solid #D6D6D6;
+    font-size: 1.2rem;
+    border-bottom: 1px dashed #D6D6D6;
+    text-shadow: 7px 7px 7px rgb(10, 8, 8, 1);
 }
 
 #portfolio-icon{
     display: inline; 
 }
 
-#header a{
-    color: black;
+#header-section a{
+    color: white;
     text-decoration: none;
 }
 
-#header a:hover{
-    font-size: 1rem;
+#header-section a:hover{
+    font-size: 1.3rem;
 }
 
+
 /* Introduction Section */
-#introduction{
+#introduction-section{
     display:flex;
     text-align: justify;
     margin-top: 100px;
     padding-left: 100px;
     padding-right: 100px;
-    font-size: 0.875rem;
+    font-size: 1rem;
 }
 
 #span-hi{
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     line-height: 30px;
 }
 
 #span-name{
-    font-size: 1.25rem;
+    font-size: 1.3rem;
 }
 
 #span-developer{
+    font-size: 0.8rem;
     color: #8C8C8C;
-    font-size: 0.625rem;
 }
 
 #my-image{
     width: 300px;
     height: 250px;
     border-radius: 50%;
+    margin-top: 80px;
     margin-left: 50px;
     /* border: 1px solid #D6D6D6; */
     backdrop-filter: blur(20px);
@@ -70,33 +75,43 @@ body{
 }
 
 #hire-me-button{
+    font-size: 1rem;
+    font-weight: 700;
     text-align: center;
     background-color: transparent;
     color: white;
     outline: none;
     border: 2px solid #D6D6D6;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 4px 6px 4px 6px;
+    text-decoration: none;
     margin-left: 100px;
     margin-right: 10px;
 }
 
 #resume-button{
+    font-size: 1rem;
+    font-weight: 700;
     text-align: center;
+    background-color: white;
+    color: black;
     outline: none;
     border: 2px solid #D6D6D6;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 4px 6px 4px 6px;
+    text-decoration: none;
 }
 
+
 /* Education Section */
-#education{
+#education-section{
     text-align: center;
+    font-size: 1.2rem;
     margin-top: 80px;
 }
 
 #education-para{
-    font-size: 0.688rem;
+    font-size: 0.9rem;
 }
 
 #education-info{
@@ -108,20 +123,18 @@ body{
 .box{
     border: 2px dashed white;
     border-radius: 20px;
-    height: 200px;
+    height: 230px;
     width: 35%;
     background-color: transparent;
     color: white;
-    padding: 0px 0px 15px;
     margin-top: 40px;
-    /* margin-left: 100px; */
     backdrop-filter: blur(20px);
     box-shadow: 0 0 5px rgba(223, 235, 242, 1);
 }
 
 .box-content{
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 #box-image1{
@@ -130,8 +143,6 @@ body{
     border-radius: 50%;
     height: 72px;
     width: 80px;
-    background-repeat: no-repeat;
-    /* background-position: 100%; */
     background-size: cover;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -145,31 +156,35 @@ body{
     border-radius: 50%;
     height: 76px;
     width: 79px;
-    background-repeat: no-repeat;
-    /* background-position: 100%; */
     background-size: cover;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.box-class{
+.education-main-line{
+    line-height: 10px;
+    font-size: 1.1rem;
+}
+.box-inner-content{
     color: #8C8C8C;
-    font-size: 0.625rem;
+    font-size: 0.8rem;
 }
 .education-bio{
-    font-size: 0.875rem;
+    font-size: 1rem;
 }
 
+
 /* Projects Section */
-#projects{
+#projects-section{
     text-align: center;
+    font-size: 1.2rem;
     margin-top: 80px;
 }
 
 #projects-para{
-    font-size: 0.688rem;
+    font-size: 0.9rem;
 }
 
 #projects-info{
@@ -179,50 +194,71 @@ body{
 }
 
 .projects-box{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-evenly;
 border: 2px dashed white;
 border-radius: 20px;
-height: 310px;
-width: 45%;
-background-color: black;
+height: 300px;
+width: 25%;
+background-color: transparent;
 color: white;
 padding: 0px 0px 15px;
 margin-top: 40px;
-/* margin-left: 100px; */
 backdrop-filter: blur(20px);
 box-shadow: 0 0 5px rgba(223, 235, 242, 1);
 }
+
+.projects-image{
+    height: 150px;
+    width: 90%;
+    margin-top: 10px;
+    object-fit: contain;
+}
+
+.projects-main-line{
+    line-height: 10px;
+    text-align: left;
+    font-size: 1.1rem;
+    color: #8C8C8C;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.projects-bio{
+    font-size: 1rem;
+    text-align: justify;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+
 /* Skills Section */
-#skills{
+#skills-section{
     text-align: center;
+    font-size: 1.2rem;
     margin-top: 80px;
 }
 
 #skills-para{
-    font-size: 0.688rem;
+    font-size: 0.9rem;
 }
 
 #skills-info{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 #skills-box{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    border: 2px dashed white;
+    border: 2px dotted white;
     border-radius: 20px;
     height: 310px;
     width: 45%;
     background-color: black;
     color: white;
-    padding: 0px 0px 15px;
+    padding: 0px 0px 20px;
     margin-top: 40px;
-    /* margin-left: 100px; */
     backdrop-filter: blur(20px);
     box-shadow: 0 0 5px rgba(223, 235, 242, 1);
 }
@@ -231,7 +267,6 @@ box-shadow: 0 0 5px rgba(223, 235, 242, 1);
     border: none;
     height: 65px;
     width: 45px;
-    background-repeat: no-repeat;
     padding:30px 40px 30px 40px;
     background-size: cover;
     margin-top: 25px;
@@ -240,54 +275,96 @@ box-shadow: 0 0 5px rgba(223, 235, 242, 1);
     margin-right: auto;
 }
 
+
 /* Experience Section */
-#experience{
+#experience-section{
     text-align: center;
+    font-size: 1.2rem;
     margin-top: 80px;
 }
 
 #experience-para{
-    font-size: 0.688rem;
+    font-size: 0.9rem;
 }
 
 #experience-info{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-#experience-box{
+.experience-box{
     border: 2px dotted white;
     border-radius: 20px;
     height: 200px;
     width: 30%;
     background-color: transparent;
     color: white;
-    padding: 15px 15px 15px 15px;
+    padding: 5px 15px 5px 15px;
     margin-top: 40px;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 5px rgba(223, 235, 242, 1);
 }
 
-#company-logo{
+.company-logo{
     outline: none;
     border: none;
     border-radius: 50%;
     height: 76px;
     width: 79px;
-    background-repeat: no-repeat;
     background-size: cover; 
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-left : auto; 
     margin-right: auto;
 }
 
-.experience-para{
-    line-height: 30px;
-    /* text-align: left; */
+.experience-main-line{
+    line-height: 10px;
+    font-size: 1.1rem;
 }
 
-.experience-paras{
+.experience-bio{
     color: #8C8C8C;
-    font-size: 0.875rem;
+    font-size: 0.8rem;
+}
+
+/* Footer Section */
+#footer-section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #44444C;
+    color: black;
+    font-weight: 700;
+    margin-top: 80px;
+    border-top: 1px dashed #D6D6D6;
+}
+
+.footer-main-line{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 30px;
+    text-shadow: 7px 7px 7px rgb(10, 8, 8, 1);
+}
+
+#social-media-links{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: white;
+    margin-top: 10px;
+    text-shadow: 7px 7px 7px rgb(10, 8, 8, 1);
+}
+
+#copyright-icon{
+    height: 14px;
+}
+
+#copyright-para{
+    font-size: 1rem;
 }
