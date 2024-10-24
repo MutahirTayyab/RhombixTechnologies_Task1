@@ -21,7 +21,7 @@ body{
     background-color: #44444C;
     font-weight: 700;
     font-size: 1.2rem;
-    border-bottom: 1px dashed #D6D6D6;
+    /* border-bottom: 1px dashed #D6D6D6; */
     text-shadow: 7px 7px 7px rgb(10, 8, 8, 1);
 }
 
@@ -35,7 +35,8 @@ body{
 }
 
 #header-section a:hover{
-    font-size: 1.3rem;
+    font-size: 1.23rem;
+    color: black;
 }
 
 
@@ -63,7 +64,7 @@ body{
     color: #8C8C8C;
 }
 
-#my-image{
+#developer-image{
     width: 300px;
     height: 250px;
     border-radius: 50%;
@@ -71,10 +72,10 @@ body{
     margin-left: 50px;
     /* border: 1px solid #D6D6D6; */
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 20px rgba(223, 235, 242, 1);
+    /* box-shadow: 0 0 20px rgba(223, 235, 242, 1); */
 }
 
-#hire-me-button{
+#github-button{
     font-size: 1rem;
     font-weight: 700;
     text-align: center;
@@ -167,10 +168,12 @@ body{
     line-height: 10px;
     font-size: 1.1rem;
 }
+
 .box-inner-content{
     color: #8C8C8C;
     font-size: 0.8rem;
 }
+
 .education-bio{
     font-size: 1rem;
 }
@@ -196,7 +199,7 @@ body{
 .projects-box{
 border: 2px dashed white;
 border-radius: 20px;
-height: 300px;
+height: 330px;
 width: 25%;
 background-color: transparent;
 color: white;
@@ -214,9 +217,16 @@ box-shadow: 0 0 5px rgba(223, 235, 242, 1);
 }
 
 .projects-main-line{
-    line-height: 10px;
+    line-height: 20px;
     text-align: left;
     font-size: 1.1rem;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.projects-date{
+    text-align: left;
+    font-size: 0.8rem;
     color: #8C8C8C;
     padding-left: 16px;
     padding-right: 16px;
@@ -262,6 +272,7 @@ box-shadow: 0 0 5px rgba(223, 235, 242, 1);
     backdrop-filter: blur(20px);
     box-shadow: 0 0 5px rgba(223, 235, 242, 1);
 }
+
 .skills-logo{
     outline: none;
     border: none;
@@ -296,37 +307,128 @@ box-shadow: 0 0 5px rgba(223, 235, 242, 1);
 .experience-box{
     border: 2px dotted white;
     border-radius: 20px;
-    height: 200px;
-    width: 30%;
+    height: 140px;
+    width: 40%;
     background-color: transparent;
     color: white;
-    padding: 5px 15px 5px 15px;
+    padding: 10px 15px 5px 15px;
     margin-top: 40px;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 5px rgba(223, 235, 242, 1);
 }
 
 .company-logo{
+    float: left;
     outline: none;
     border: none;
     border-radius: 50%;
     height: 76px;
     width: 79px;
     background-size: cover; 
-    margin-bottom: 10px;
-    margin-left : auto; 
-    margin-right: auto;
+    margin-left : 5px; 
+    margin-right: 10px;
 }
 
 .experience-main-line{
-    line-height: 10px;
+    text-align: left;
+    line-height: 20px;
     font-size: 1.1rem;
 }
 
 .experience-bio{
+    text-align: left;
     color: #8C8C8C;
     font-size: 0.8rem;
 }
+
+.experience-developer{
+    text-align: left;
+    font-size: 1rem;
+    margin-left : 5px; 
+}
+
+.experience-skills{
+    text-align: left;
+    font-size: 1rem;
+    margin-left : 5px; 
+}
+
+
+/* Contact Section */
+#contact-section{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 80px;
+}
+
+#contact-para{
+    font-size: 0.9rem;
+}
+
+#contact-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    text-align: center;
+    /* border: 2px dotted white; */
+    border-radius: 20px;
+    height: 220px;
+    width: 40%;
+    background-color: transparent;
+    color: white;
+    padding: 10px 15px 5px 15px;
+    margin-top: 40px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 5px rgba(223, 235, 242, 1);
+}
+
+.form-text{
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.form-label{
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+#client-email{
+    margin-left: 16px;
+}
+
+#client-number{
+    margin-left: 10px;
+}
+
+.form-control{
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    padding: 0px 1px;
+    padding-left: 1px;
+}
+
+.form-check-label{
+    font-size: 1rem;
+}
+
+.btn-primary{
+    font-size: 1rem;
+    font-weight: 700;
+    /* text-align: center; */
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: 2px solid #D6D6D6;
+    border-radius: 5px;
+    padding: 4px 9px 4px 9px;
+    text-decoration: none;
+}
+
 
 /* Footer Section */
 #footer-section{
@@ -339,7 +441,7 @@ box-shadow: 0 0 5px rgba(223, 235, 242, 1);
     color: black;
     font-weight: 700;
     margin-top: 80px;
-    border-top: 1px dashed #D6D6D6;
+    /* border-top: 1px dashed #D6D6D6; */
 }
 
 .footer-main-line{
@@ -368,3 +470,82 @@ box-shadow: 0 0 5px rgba(223, 235, 242, 1);
 #copyright-para{
     font-size: 1rem;
 }
+
+
+/* Media Queries for responsiveness */
+
+/* Large devices (desktops, 1200px and up) */
+/* @media (min-width: 1200px) {
+    #header-section, #education-section, #projects-section, #skills-section, #experience-section, #contact-section {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+} */
+
+/* Medium devices (tablets, 768px to 1199px) */
+/* @media (max-width: 1199px) and (min-width: 768px) {
+    #introduction-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #developer-image {
+        margin-top: 20px;
+        margin-left: 0;
+        width: 250px;
+        height: 220px;
+    }
+
+    #education-info, #projects-info, #skills-box, #experience-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box, .projects-box, #skills-box, .experience-box {
+        width: 80%;
+        height: auto;
+    }
+
+    form {
+        width: 80%;
+    }
+} */
+
+/* Small devices (phones, less than 768px) */
+/* @media (max-width: 767px) {
+    #header-section {
+        font-size: 1rem;
+    }
+
+    #introduction-section {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #developer-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .box, .projects-box, #skills-box, .experience-box {
+        width: 90%;
+        height: auto;
+    }
+
+    #education-section, #projects-section, #skills-section, #experience-section, #contact-section {
+        margin-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    #github-button, #resume-button {
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+    }
+} */

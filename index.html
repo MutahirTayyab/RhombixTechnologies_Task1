@@ -18,29 +18,29 @@
             <a href="index.html">Portfolio</a>
         </div>
 
-        <a href="#">Introduction</a>
-        <a href="#">Education</a>
-        <a href="#">Projects</a>
-        <a href="#">Skills</a>
-        <a href="#">Experience</a>
-        <a href="#">Contact</a>
+        <a href="#introduction-section">Introduction</a>
+        <a href="#education-section">Education</a>
+        <a href="#projects-section">Projects</a>
+        <a href="#skills-section">Skills</a>
+        <a href="#experience-section">Experience</a>
+        <a href="#contact-section">Contact</a>
     </header>
 
-    
+
     <!-- Introduction Section -->
     <div id="introduction-section">
         <p>
         <span id="span-hi">Hi, I am</span><br>
         <span id="span-name"><i><b>Mutahir Tayyab</b></i></span><br>
-        <span id="span-developer"><b>Full Stack Developer</b></span><br><br>      
+        <span id="span-developer"></span><br><br>      
         I am a driven and adaptable individual, passionate about creating impactful web solutions. With a keen interest in learning new technologies and solving complex problems, I am committed to building efficient, scalable, and user-friendly web applications. My enthusiasm for web development, combined with a growth mindset, allows me to take on challenges confidently and continuously improve my skills. I strive for excellence in every project I undertake, ensuring high-quality results that exceed expectations. Explore my projects, get to know my work, or reach out to collaborate—I'm always ready for the next big opportunity.
         </p>
 
-        <img src="mutahir-pic.jpeg" id="my-image">
+        <img src="developer-image.png" id="developer-image">
     </div>    
 
-    <a href="#" id="hire-me-button" target="_blank">Hire Me!</a>
-    <a href="file:///F:/Documents/CV/Resume.pdf" id="resume-button" target="_blank">Check Resume</a>
+    <a href="https://github.com/MutahirTayyab" id="github-button" target="_blank">Visit GitHub</a>
+    <a href="file:///F:/Projects/RhombixTechnologies_Tasks/Resume.pdf" id="resume-button" target="_blank">Check Resume</a>
 
 
     <!-- Education Section -->
@@ -70,8 +70,7 @@
                     <p class="education-bio">I have completed my Intermediate in Engineering from Superior Group of Colleges</p>
                 </div>
             </div>
-        </div>
-        
+        </div>    
     </div>
 
 
@@ -84,12 +83,14 @@
             <div class="projects-box1 projects-box">
                 <a href="https://github.com/MutahirTayyab/Amazon-Clone" target="_blank"><img src="project-amazon.png" class="project-image1 projects-image"></a>
                 <p class="projects-main-line">Amazon</p>
+                <p class="projects-date">Aug 2024 - Aug 2024</p>
                 <p class="projects-bio">The Amazon Homepage Clone Project is designed to enhance my understanding and provide insight into the structure and functionality of real-world applications.</p>
             </div>
 
             <div class="projects-box2 projects-box">
                 <a href="#" target="_blank"><img src="project-burger-world.png" class="project-image2 projects-image"></a>
                 <p class="projects-main-line">Burger World</p>
+                <p class="projects-date">Under Development</p>
                 <p class="projects-bio">It is a Burger Restaurant project where you can order burger's, post reviews, subscribe to the monthly deals.</p>
             </div>
         </div>
@@ -128,9 +129,39 @@
                 <p class="experience-bio">Rhombix Technologies</p>
                 <p class="experience-bio">Oct 2024 - Present</p>
                 <p class="experience-bio">Remote</p>
-                <p class="experience-main-line">Working as a Frontend Developer</p>
+                <p class="experience-developer">Working as a Frontend Developer</p>
                 <p class="experience-skills">Skills <span class="experience-bio">HTML , CSS , Javascript , Git and Github</span></p>
             </div>
+        </div>
+    </div>
+
+
+    <!-- Contact Section -->
+    <div id="contact-section">
+        <h2>Contact Me</h2>
+        <p id="contact-para">Contact me for work/general enquiries</p>
+        
+        <div id="contact-info">
+            <form>
+                <div id="emailHelp" class="form-text">We'll never share your Email and Phone with anyone
+                else.</div>
+                
+                <label for="client-email" class="form-label">Email Address</label>
+                <input type="email" placeholder="xyz@example.com" class="form-control" id="client-email"
+                aria-describedby="emailHelp"><br>
+                
+                <label for="client-number" class="form-label">Phone Number</label>
+                <input type="phone" placeholder="+92 3016115566" class="form-control" id="client-number">
+                
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="isClient">
+                    <label class="form-check-label" for="isClient">I want you to work on a project with me!
+                    </label>
+                </div>
+
+                <a href="index.html" class="btn btn-primary" onclick="submitFunction()"
+                target="_blank">Submit</a>
+            </form>
         </div>
     </div>
 
@@ -139,14 +170,29 @@
     <div id="footer-section">
         <div id="footer-info">
             <p class="footer-main-line">Mutahir Tayyab</p>
+            
             <div id="social-media-links">
-                <a href="" target="_blank"><img src="instagram-icon.png"></a>&nbsp; &nbsp;
-                <a href="" target="_blank"><img src="facebook-icon.png"></a>&nbsp; &nbsp;
+                <a href="https://www.instagram.com/mutahirspamxx/profilecard/?igsh=YW5qNGlzc3hlNHNj" target="_blank"><img src="instagram-icon.png"></a>&nbsp; &nbsp;
+                <a href="https://www.facebook.com/profile.php?id=100094234480161" target="_blank"><img src="facebook-icon.png"></a>&nbsp; &nbsp;
                 <a href="https://www.linkedin.com/in/mutahir-tayyab-575b86283/" target="_blank"><img src="linkedin-icon.png"></a>
             </div>
+            
             <p id="copyright-para"><img src="copyright-icon.png" id="copyright-icon">2024 Mutahir Tayyab. All rights reserved</p>
         </div>
     </div>
+
+    <!-- Animation Section -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+    var typed = new Typed('#span-developer', {
+        strings: ['<b>Web Designer</b>', '<b>Web Developer</b>'],
+        typeSpeed: 50,
+    });
+    </script>
+
+    <script src="script.js"></script>
 </body>
 </html>
 
