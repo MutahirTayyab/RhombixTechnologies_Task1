@@ -209,6 +209,11 @@ backdrop-filter: blur(20px);
 box-shadow: 0 0 5px rgba(223, 235, 242, 1);
 }
 
+.projects-box a{
+    text-decoration: none;
+    color: white;
+}
+
 .projects-image{
     height: 150px;
     width: 90%;
@@ -461,6 +466,11 @@ form{
     color: white;
     margin-top: 10px;
     text-shadow: 7px 7px 7px rgb(10, 8, 8, 1);
+}
+
+#social-media-links a{
+    text-decoration: none;
+    color: white;
 }
 
 #copyright-icon{
