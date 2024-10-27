@@ -482,80 +482,119 @@ form{
 }
 
 
-/* Media Queries for responsiveness */
+/* Media Queries for Responsive Design */
 
-/* Large devices (desktops, 1200px and up) */
-/* @media (min-width: 1200px) {
-    #header-section, #education-section, #projects-section, #skills-section, #experience-section, #contact-section {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-} */
-
-/* Medium devices (tablets, 768px to 1199px) */
-/* @media (max-width: 1199px) and (min-width: 768px) {
-    #introduction-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #developer-image {
-        margin-top: 20px;
-        margin-left: 0;
-        width: 250px;
-        height: 220px;
-    }
-
-    #education-info, #projects-info, #skills-box, #experience-info {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .box, .projects-box, #skills-box, .experience-box {
-        width: 80%;
-        height: auto;
-    }
-
-    form {
-        width: 80%;
-    }
-} */
-
-/* Small devices (phones, less than 768px) */
-/* @media (max-width: 767px) {
+/* Extra Small devices (phones, less than 576px) */
+@media (max-width: 576px) {
     #header-section {
+        flex-direction: column;
         font-size: 1rem;
+        height: auto;
+        padding: 10px;
     }
 
     #introduction-section {
         flex-direction: column;
-        padding-left: 20px;
-        padding-right: 20px;
+        align-items: center;
+        margin-top: 50px;
+        padding: 0 20px;
+        font-size: 0.9rem;
     }
 
     #developer-image {
         width: 200px;
         height: 200px;
+        margin-top: 20px;
+        margin-left: 0;
     }
 
-    .box, .projects-box, #skills-box, .experience-box {
+    #education-info, #projects-info, #skills-info, #experience-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box, .projects-box, #skills-box, .experience-box, form {
         width: 90%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .projects-image {
+        width: 100%;
         height: auto;
     }
 
-    #education-section, #projects-section, #skills-section, #experience-section, #contact-section {
-        margin-top: 40px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    form {
-        width: 90%;
-    }
-
     #github-button, #resume-button {
-        margin-left: 0;
-        margin-right: 0;
-        display: block;
+        margin: 10px 0;
+        width: 100%;
     }
-} */
+
+    #footer-section {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+/* Small devices (portrait tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 768px) {
+    #header-section {
+        flex-direction: row;
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+
+    #introduction-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 30px;
+        font-size: 1rem;
+    }
+
+    #developer-image {
+        width: 220px;
+        height: 220px;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .box, .projects-box, #skills-box, .experience-box, form {
+        width: 85%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    #footer-section {
+        font-size: 1.1rem;
+        padding: 20px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 992px) {
+    #introduction-section {
+        flex-direction: row;
+        padding: 0 50px;
+    }
+
+    #developer-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .box, .projects-box, #skills-box, .experience-box, form {
+        width: 80%;
+        height: auto;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) {
+    #introduction-section {
+        flex-direction: row;
+        padding: 0 80px;
+    }
+
+    .box, .projects-box, #skills-box, .experience-box, form {
+        width: 70%;
+    }
+}
