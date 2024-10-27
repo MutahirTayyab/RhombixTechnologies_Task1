@@ -1,4 +1,4 @@
-                                                🖥️ Portfolio 🖥️
+                                                 🖥️ Portfolio 🖥️
 
 Welcome to my portfolio! This repository showcases my journey as a Full Stack Developer. Dive into my projects, skills, and experiences, all crafted with love and precision.
 
